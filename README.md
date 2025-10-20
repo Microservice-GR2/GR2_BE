@@ -121,10 +121,13 @@ docker-compose up -d --build
  ├── ingress.yaml
 ```
 
-### 🚀 Triển khai trên Minikube:
+### 🚀 Triển khai trên Docker Desktop Kubernetes:
 
 ```bash
-minikube start
+# Bật Kubernetes trong Docker Desktop Settings
+# Docker Desktop > Settings > Kubernetes > Enable Kubernetes
+
+# Sau đó triển khai:
 kubectl apply -f k8s/
 kubectl get pods
 kubectl get services
